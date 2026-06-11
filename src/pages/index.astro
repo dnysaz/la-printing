@@ -1,3 +1,19 @@
+---
+import Header from '../components/Header.astro';
+import MobileMenu from '../components/MobileMenu.astro';
+import Hero from '../components/Hero.astro';
+import Layanan24Jam from '../components/Layanan24Jam.astro';
+import Jasa from '../components/Jasa.astro';
+import Produk from '../components/Produk.astro';
+import Tentang from '../components/Tentang.astro';
+import CaraPesan from '../components/CaraPesan.astro';
+import Testimonial from '../components/Testimonial.astro';
+import Kontak from '../components/Kontak.astro';
+import Footer from '../components/Footer.astro';
+import FloatingBar from '../components/FloatingBar.astro';
+import MobileMenuScript from '../components/MobileMenuScript.astro';
+---
+
 <!DOCTYPE html>
 <html lang="id">
   <head>
@@ -5,8 +21,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="canonical" href="https://laprintingbali.com" />
-    <meta name="description" content="LA Printing Bali - Percetakan Digital & Offset di Denpasar. Cetak buku, brosur, spanduk, banner, kartu nama, undangan, nota, sticker 24 jam. Kirim file via WA, antar Ojol Denpasar. Kualitas premium, harga bersahabat." />
-    <meta name="keywords" content="percetakan Bali, printing Denpasar, cetak buku, cetak brosur, cetak spanduk, cetak banner, cetak kartu nama, cetak undangan, cetak nota, cetak sticker, percetakan 24 jam, LA Printing Bali, digital printing Denpasar, offset printing Bali" />
+    <meta name="description" content="LA Printing Bali - Percetakan Digital & Offset di Denpasar. Cetak buku, brosur, spanduk, banner, kartu nama, undangan, nota, sticker 24 jam. Jasa desain grafis undangan, kartu ucapan, spanduk, nota. Kirim file via WA, antar Ojol Denpasar." />
+    <meta name="keywords" content="percetakan Bali, printing Denpasar, cetak buku, cetak brosur, cetak spanduk, cetak banner, cetak kartu nama, cetak undangan, cetak nota, cetak sticker, cetak 24 jam, LA Printing Bali, digital printing Denpasar, offset printing Bali, jasa desain grafis Denpasar, desain undangan, desain kartu ucapan, desain spanduk, desain nota, print nota" />
     <meta name="author" content="LA Printing Bali" />
     <meta name="generator" content="Webkalcer.com" />
     <meta name="theme-color" content="#000000" />
@@ -17,14 +33,14 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://laprintingbali.com" />
     <meta property="og:title" content="LA Printing Bali - Percetakan Digital & Offset 24 Jam di Denpasar | Harga Bersahabat" />
-    <meta property="og:description" content="Cetak buku, brosur, spanduk, banner, kartu nama, undangan, nota, sticker. Cetak 24 jam nonstop. Kirim file via WA, antar Ojol area Denpasar. Kualitas premium, harga terjangkau." />
+    <meta property="og:description" content="Cetak buku, brosur, spanduk, banner, kartu nama, undangan, nota, sticker. Jasa desain grafis undangan, kartu ucapan, spanduk, nota. Cetak 24 jam nonstop. Kirim file via WA, antar Ojol area Denpasar." />
     <meta property="og:image" content="https://laprintingbali.com/og-image.jpg" />
     <meta property="og:locale" content="id_ID" />
     <meta property="og:site_name" content="LA Printing Bali" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="LA Printing Bali - Percetakan Digital & Offset 24 Jam Denpasar" />
-    <meta name="twitter:description" content="Cetak buku, brosur, spanduk, banner, kartu nama, undangan, nota, sticker 24 jam. Kirim file via WA, antar Ojol Denpasar." />
+    <meta name="twitter:description" content="Cetak buku, brosur, spanduk, banner, kartu nama, undangan, nota, sticker 24 jam. Jasa desain grafis undangan, kartu ucapan, spanduk, nota. Kirim file via WA, antar Ojol Denpasar." />
     <meta name="twitter:image" content="https://laprintingbali.com/og-image.jpg" />
 
     <script type="application/ld+json" is:inline>
@@ -32,7 +48,7 @@
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "LA Printing Bali",
-        "description": "Percetakan Digital & Offset di Denpasar. Cetak buku, brosur, spanduk, banner, kartu nama, undangan, nota, sticker 24 jam nonstop. Kirim file via WhatsApp, antar via Ojol area Denpasar.",
+        "description": "Percetakan Digital & Offset di Denpasar. Cetak buku, brosur, spanduk, banner, kartu nama, undangan, nota, sticker 24 jam nonstop. Jasa desain grafis undangan, kartu ucapan, spanduk, nota. Kirim file via WhatsApp, antar via Ojol area Denpasar.",
         "url": "https://laprintingbali.com",
         "telephone": "+6282144140250",
         "email": "",
@@ -66,7 +82,13 @@
           {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Cetak Kartu Nama"}},
           {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Cetak Undangan"}},
           {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Cetak Nota"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Cetak Sticker & Label"}}
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Cetak Sticker & Label"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Jasa Desain Grafis"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Desain Undangan"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Desain Kartu Ucapan"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Desain Spanduk & Banner"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Desain Kartu Nama"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Desain Nota"}}
         ]
       }
     </script>
@@ -83,477 +105,26 @@
       }
       section { position: relative; }
     </style>
-    <title>LA Printing Bali - Percetakan Digital & Offset 24 Jam Denpasar | Cetak Buku, Brosur, Spanduk, Kartu Nama</title>
+    <title>LA Printing Bali - Percetakan Digital & Offset 24 Jam Denpasar | Cetak Buku, Brosur, Spanduk, Kartu Nama, Jasa Desain Grafis</title>
   </head>
 
   <body class="bg-white text-neutral-900">
-
-    <!-- HEADER -->
-    <header class="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur-md border-b border-neutral-200">
-      <div class="px-6 py-4 max-w-7xl mx-auto flex items-center justify-between">
-      <a href="#" class="flex items-center gap-3">
-        <span class="text-2xl font-black tracking-tighter">LA</span>
-        <span class="h-6 w-px bg-neutral-300"></span>
-        <span class="text-sm font-medium text-neutral-500 tracking-wide uppercase">Printing Bali</span>
-      </a>
-      <div class="flex items-center gap-8">
-        <nav class="hidden md:flex items-center gap-8 text-sm">
-          <a href="#jasa" class="font-medium text-neutral-500 hover:text-neutral-900 transition-colors">Jasa</a>
-          <a href="#produk" class="font-medium text-neutral-500 hover:text-neutral-900 transition-colors">Produk</a>
-          <a href="#tentang" class="font-medium text-neutral-500 hover:text-neutral-900 transition-colors">Tentang</a>
-          <a href="#kontak" class="font-medium text-neutral-500 hover:text-neutral-900 transition-colors">Kontak</a>
-        </nav>
-        <a href="https://wa.me/6282144140250?text=Halo%20La%20Printing%20Bali%2C%20saya%20mau%20kosultasi%20untuk%20percetakan%20bisa%3F" target="_blank" rel="noopener" class="hidden md:inline-flex items-center gap-2 bg-neutral-900 text-white px-5 py-2.5 text-sm font-bold hover:bg-neutral-800 transition-colors">
-          <i class="ri-whatsapp-fill text-sm"></i>
-          Konsultasi
-        </a>
-        <button id="menu-btn" class="md:hidden h-10 w-10 border border-neutral-200 grid place-items-center hover:bg-neutral-100 transition-colors cursor-pointer" aria-label="Menu">
-          <i id="menu-icon" class="ri-menu-line text-lg"></i>
-        </button>
-      </div>
-      </div>
-    </header>
-
-    <!-- MOBILE MENU -->
-    <div id="mobile-menu" class="md:hidden fixed inset-0 z-50 bg-white translate-x-full transition-transform duration-300">
-      <div class="px-6 py-5 flex justify-end">
-        <button id="menu-close" class="h-10 w-10 border border-neutral-200 grid place-items-center hover:bg-neutral-100 transition-colors cursor-pointer">
-          <i class="ri-close-line text-lg"></i>
-        </button>
-      </div>
-      <nav class="flex flex-col items-center justify-center h-full -mt-16 gap-10 text-center">
-        <a href="#jasa" class="text-3xl font-bold text-neutral-800 hover:text-neutral-900 transition-colors">Jasa</a>
-        <a href="#produk" class="text-3xl font-bold text-neutral-800 hover:text-neutral-900 transition-colors">Produk</a>
-        <a href="#tentang" class="text-3xl font-bold text-neutral-800 hover:text-neutral-900 transition-colors">Tentang</a>
-        <a href="#kontak" class="text-3xl font-bold text-neutral-800 hover:text-neutral-900 transition-colors">Kontak</a>
-        <a href="https://wa.me/6282144140250?text=Halo%20La%20Printing%20Bali%2C%20saya%20mau%20kosultasi%20untuk%20percetakan%20bisa%3F" target="_blank" rel="noopener" class="bg-neutral-900 text-white px-10 py-4 text-lg font-bold hover:bg-neutral-800 transition-colors">
-          Chat WhatsApp
-        </a>
-      </nav>
-    </div>
+    <Header />
+    <MobileMenu />
 
     <main class="pt-16">
-
-      <!-- HERO -->
-      <section class="bg-neutral-900 text-white relative overflow-hidden">
-        <div class="absolute inset-0 opacity-[0.04]" style="background-image: repeating-linear-gradient(45deg, #fff 0px, #fff 2px, transparent 2px, transparent 8px);"></div>
-        <div class="max-w-7xl mx-auto px-6 py-24 md:py-32 relative">
-          <div class="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <p class="text-neutral-500 text-sm font-medium tracking-[0.15em] uppercase mb-6">Percetakan Digital & Offset — Denpasar</p>
-              <h1 class="text-5xl md:text-7xl lg:text-8xl font-black leading-[0.95] tracking-tighter">
-                Jasa <span class="text-white">Printing</span><br />
-                <span class="text-neutral-400">Berkualitas</span><br />
-                <span class="text-neutral-400">Harga Bersahabat</span>
-              </h1>
-              <p class="text-neutral-400 text-lg md:text-xl max-w-xl mt-8 leading-relaxed">
-                Buku, brosur, spanduk, banner, kartu nama, undangan, sticker — semua kebutuhan cetak Anda dalam satu tempat.
-              </p>
-              <div class="flex flex-wrap gap-4 mt-10">
-                <a href="https://wa.me/6282144140250?text=Halo%20La%20Printing%20Bali%2C%20saya%20mau%20kosultasi%20untuk%20percetakan%20bisa%3F" target="_blank" rel="noopener" class="bg-white text-neutral-900 font-bold px-8 py-4 text-sm hover:bg-neutral-200 transition-colors inline-flex items-center gap-2">
-                  <i class="ri-whatsapp-fill text-base"></i>
-                  Konsultasi Gratis
-                </a>
-                <a href="#kontak" class="border border-neutral-600 text-neutral-300 font-medium px-8 py-4 text-sm hover:border-neutral-400 hover:text-white transition-colors inline-flex items-center gap-2">
-                  Lihat Lokasi
-                </a>
-              </div>
-            </div>
-            <div class="hidden md:flex justify-center">
-              <div class="relative">
-                <div class="w-72 h-72 rounded-full border border-neutral-700 flex items-center justify-center">
-                  <div class="w-56 h-56 rounded-full border border-neutral-700 flex items-center justify-center">
-                    <div class="w-40 h-40 rounded-full bg-neutral-800 flex items-center justify-center">
-                      <i class="ri-printer-cloud-line text-7xl text-neutral-400"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="absolute -top-4 -right-4 w-16 h-16 bg-neutral-800 rounded-full flex items-center justify-center border border-neutral-700">
-                  <i class="ri-file-text-line text-2xl text-neutral-400"></i>
-                </div>
-                <div class="absolute -bottom-2 -left-4 w-14 h-14 bg-neutral-800 rounded-full flex items-center justify-center border border-neutral-700">
-                  <i class="ri-image-line text-xl text-neutral-400"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="grid grid-cols-2 md:grid-cols-4 gap-px bg-neutral-800 mt-16">
-            <div class="bg-neutral-900 py-8 px-6 text-center">
-              <p class="text-3xl md:text-4xl font-black text-white">5+</p>
-              <p class="text-sm text-neutral-500 mt-1">Tahun</p>
-            </div>
-            <div class="bg-neutral-900 py-8 px-6 text-center">
-              <p class="text-3xl md:text-4xl font-black text-white">1.000+</p>
-              <p class="text-sm text-neutral-500 mt-1">Klien</p>
-            </div>
-            <div class="bg-neutral-900 py-8 px-6 text-center">
-              <p class="text-3xl md:text-4xl font-black text-white">5.000+</p>
-              <p class="text-sm text-neutral-500 mt-1">Pesanan</p>
-            </div>
-            <div class="bg-neutral-900 py-8 px-6 text-center">
-              <p class="text-3xl md:text-4xl font-black text-white">100%</p>
-              <p class="text-sm text-neutral-500 mt-1">Puas</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- LAYANAN 24 JAM -->
-      <section class="bg-white border-b border-neutral-200">
-        <div class="max-w-7xl mx-auto px-6 py-10 md:py-14">
-          <div class="grid md:grid-cols-3 gap-8 md:gap-12">
-            <div class="flex items-start gap-5">
-              <span class="text-3xl font-black text-neutral-200 leading-none">01</span>
-              <div>
-                <h3 class="font-bold text-neutral-900">Cetak 24 Jam</h3>
-                <p class="text-sm text-neutral-500 mt-1 leading-relaxed">Cetak kapan pun Anda butuh — 24 jam nonstop. Tinggal kirim file via WA, kami proses.</p>
-              </div>
-            </div>
-            <div class="flex items-start gap-5">
-              <span class="text-3xl font-black text-neutral-200 leading-none">02</span>
-              <div>
-                <h3 class="font-bold text-neutral-900">Kirim File via WhatsApp</h3>
-                <p class="text-sm text-neutral-500 mt-1 leading-relaxed">Cukup chat WA, kirim file Anda. Kami proses, beres tinggal ambil atau kami antarkan.</p>
-              </div>
-            </div>
-            <div class="flex items-start gap-5">
-              <span class="text-3xl font-black text-neutral-200 leading-none">03</span>
-              <div>
-                <h3 class="font-bold text-neutral-900">Antar via Ojol</h3>
-                <p class="text-sm text-neutral-500 mt-1 leading-relaxed">Hasil cetak bisa dikirim via ojek online. Khusus area Denpasar dan sekitarnya.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- JASA -->
-      <section id="jasa" class="py-24 md:py-32">
-        <div class="max-w-7xl mx-auto px-6">
-          <div class="max-w-xl mb-16">
-            <p class="text-xs font-bold text-neutral-400 tracking-[0.2em] uppercase mb-4">/ 01</p>
-            <h2 class="text-4xl md:text-5xl font-black tracking-tight">Layanan Cetak</h2>
-            <p class="text-neutral-500 text-lg mt-4 leading-relaxed">Dari cetak buku hingga sticker, kami siap membantu mewujudkan kebutuhan cetak Anda.</p>
-          </div>
-          <div class="space-y-px">
-            <div class="grid md:grid-cols-3 border-t border-neutral-200 py-6 md:py-8">
-              <p class="text-xs font-bold text-neutral-400 tracking-widest uppercase mb-1 md:mb-0">01</p>
-              <div class="md:col-span-2">
-                <h3 class="text-xl md:text-2xl font-bold">Cetak Buku</h3>
-                <p class="text-neutral-500 mt-2 max-w-lg">Buku tahunan, modul, novel, buku custom — jilid rapi, kualitas cetak maksimal.</p>
-              </div>
-            </div>
-            <div class="grid md:grid-cols-3 border-t border-neutral-200 py-6 md:py-8">
-              <p class="text-xs font-bold text-neutral-400 tracking-widest uppercase mb-1 md:mb-0">02</p>
-              <div class="md:col-span-2">
-                <h3 class="text-xl md:text-2xl font-bold">Cetak Brosur & Flyer</h3>
-                <p class="text-neutral-500 mt-2 max-w-lg">Brosur, flyer, leaflet untuk promosi bisnis. Desain custom atau dari file Anda.</p>
-              </div>
-            </div>
-            <div class="grid md:grid-cols-3 border-t border-neutral-200 py-6 md:py-8">
-              <p class="text-xs font-bold text-neutral-400 tracking-widest uppercase mb-1 md:mb-0">03</p>
-              <div class="md:col-span-2">
-                <h3 class="text-xl md:text-2xl font-bold">Spanduk & Banner</h3>
-                <p class="text-neutral-500 mt-2 max-w-lg">Spanduk, X-banner, roll-up, backdrop — ukuran besar, cetak tajam, tahan lama.</p>
-              </div>
-            </div>
-            <div class="grid md:grid-cols-3 border-t border-neutral-200 py-6 md:py-8">
-              <p class="text-xs font-bold text-neutral-400 tracking-widest uppercase mb-1 md:mb-0">04</p>
-              <div class="md:col-span-2">
-                <h3 class="text-xl md:text-2xl font-bold">Kartu Nama</h3>
-                <p class="text-neutral-500 mt-2 max-w-lg">Kesan profesional dengan kartu nama berkualitas. Pilih bahan dan finishing sesuai selera.</p>
-              </div>
-            </div>
-            <div class="grid md:grid-cols-3 border-t border-neutral-200 py-6 md:py-8">
-              <p class="text-xs font-bold text-neutral-400 tracking-widest uppercase mb-1 md:mb-0">05</p>
-              <div class="md:col-span-2">
-                <h3 class="text-xl md:text-2xl font-bold">Undangan</h3>
-                <p class="text-neutral-500 mt-2 max-w-lg">Undangan pernikahan, khitanan, meeting — desain elegan, cetak premium.</p>
-              </div>
-            </div>
-            <div class="grid md:grid-cols-3 border-t border-neutral-200 py-6 md:py-8">
-              <p class="text-xs font-bold text-neutral-400 tracking-widest uppercase mb-1 md:mb-0">06</p>
-              <div class="md:col-span-2">
-                <h3 class="text-xl md:text-2xl font-bold">Sticker & Label</h3>
-                <p class="text-neutral-500 mt-2 max-w-lg">Sticker custom, label produk — berbagai ukuran, bahan, dan bentuk.</p>
-              </div>
-            </div>
-            <div class="grid md:grid-cols-3 border-t border-neutral-200 py-6 md:py-8">
-              <p class="text-xs font-bold text-neutral-400 tracking-widest uppercase mb-1 md:mb-0">07</p>
-              <div class="md:col-span-2">
-                <h3 class="text-xl md:text-2xl font-bold">Cetak Nota</h3>
-                <p class="text-neutral-500 mt-2 max-w-lg">Nota, kuitansi, faktur — cetak rapih untuk kebutuhan administrasi usaha Anda.</p>
-              </div>
-            </div>
-            <div class="border-t border-b border-neutral-200 py-6 md:py-8">
-              <a href="https://wa.me/6282144140250?text=Halo%20La%20Printing%20Bali%2C%20saya%20mau%20kosultasi%20untuk%20percetakan%20bisa%3F" target="_blank" rel="noopener" class="inline-flex items-center gap-2 font-bold text-sm hover:text-neutral-500 transition-colors group">
-                <span>Punya kebutuhan lain? Tanya via WhatsApp</span>
-                <i class="ri-arrow-right-up-line text-lg transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- PRODUK -->
-      <section id="produk" class="bg-neutral-900 text-white py-24 md:py-32">
-        <div class="max-w-7xl mx-auto px-6">
-          <div class="max-w-xl mb-16">
-            <p class="text-xs font-bold text-neutral-500 tracking-[0.2em] uppercase mb-4">/ 02</p>
-            <h2 class="text-4xl md:text-5xl font-black tracking-tight text-white">Produk Unggulan</h2>
-            <p class="text-neutral-400 text-lg mt-4 leading-relaxed">Beberapa produk yang paling sering kami cetak untuk pelanggan.</p>
-          </div>
-          <div class="grid md:grid-cols-2 gap-px bg-neutral-800">
-            <div class="bg-neutral-900 p-8 md:p-12">
-              <p class="text-6xl md:text-7xl font-black text-neutral-800 leading-none mb-6">01</p>
-              <h3 class="text-xl md:text-2xl font-bold text-white">Buku & Modul</h3>
-              <p class="text-neutral-400 mt-3 max-w-sm">Buku tahunan sekolah, modul pelatihan, novel — cetak berapa pun jumlahnya.</p>
-              <p class="text-sm text-neutral-500 mt-6 tracking-wider">Mulai Rp 15.000</p>
-            </div>
-            <div class="bg-neutral-900 p-8 md:p-12">
-              <p class="text-6xl md:text-7xl font-black text-neutral-800 leading-none mb-6">02</p>
-              <h3 class="text-xl md:text-2xl font-bold text-white">Spanduk & Banner</h3>
-              <p class="text-neutral-400 mt-3 max-w-sm">Spanduk ukuran besar, X-banner, roll-up banner untuk event dan promosi.</p>
-              <p class="text-sm text-neutral-500 mt-6 tracking-wider">Mulai Rp 25.000</p>
-            </div>
-            <div class="bg-neutral-900 p-8 md:p-12">
-              <p class="text-6xl md:text-7xl font-black text-neutral-800 leading-none mb-6">03</p>
-              <h3 class="text-xl md:text-2xl font-bold text-white">Kartu Nama</h3>
-              <p class="text-neutral-400 mt-3 max-w-sm">Kartu nama premium — BC, Art Paper, linen. Finishing glossy, doff, atau spot UV.</p>
-              <p class="text-sm text-neutral-500 mt-6 tracking-wider">Mulai Rp 50.000</p>
-            </div>
-            <div class="bg-neutral-900 p-8 md:p-12">
-              <p class="text-6xl md:text-7xl font-black text-neutral-800 leading-none mb-6">04</p>
-              <h3 class="text-xl md:text-2xl font-bold text-white">Undangan</h3>
-              <p class="text-neutral-400 mt-3 max-w-sm">Undangan pernikahan, khitanan, acara spesial. Desain custom tersedia.</p>
-              <p class="text-sm text-neutral-500 mt-6 tracking-wider">Mulai Rp 2.000</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- TENTANG -->
-      <section id="tentang" class="py-24 md:py-32">
-        <div class="max-w-7xl mx-auto px-6">
-          <div class="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
-            <div>
-              <p class="text-xs font-bold text-neutral-400 tracking-[0.2em] uppercase mb-4">/ 03</p>
-              <h2 class="text-4xl md:text-5xl font-black tracking-tight">Tentang<br />LA Printing Bali</h2>
-            </div>
-            <div>
-              <p class="text-neutral-600 text-lg leading-relaxed">
-                LA Printing Bali adalah percetakan digital & offset yang berlokasi di Denpasar Utara. 
-                Kami melayani cetak buku, brosur, spanduk, banner, kartu nama, undangan, sticker, 
-                dan aneka kebutuhan cetak lainnya. Dengan pengalaman lebih dari 5 tahun, kami 
-                mengutamakan kualitas hasil cetak, ketepatan waktu, dan kepuasan pelanggan.
-              </p>
-              <p class="text-neutral-600 text-lg leading-relaxed mt-6">
-                Kami juga menyediakan jasa desain grafis untuk Anda yang belum memiliki file siap cetak. 
-                Gratis konsultasi — hubungi kami kapan saja.
-              </p>
-              <div class="mt-10 flex flex-wrap gap-8">
-                <div>
-                  <p class="text-3xl font-black">5+</p>
-                  <p class="text-sm text-neutral-400 mt-1">Tahun Berdiri</p>
-                </div>
-                <div>
-                  <p class="text-3xl font-black">1.000+</p>
-                  <p class="text-sm text-neutral-400 mt-1">Pelanggan</p>
-                </div>
-                <div>
-                  <p class="text-3xl font-black">5.000+</p>
-                  <p class="text-sm text-neutral-400 mt-1">Pesanan Selesai</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- CARA PESAN -->
-      <section class="border-t border-b border-neutral-200 py-24 md:py-32">
-        <div class="max-w-7xl mx-auto px-6">
-          <div class="max-w-xl mb-16">
-            <p class="text-xs font-bold text-neutral-400 tracking-[0.2em] uppercase mb-4">/ 04</p>
-            <h2 class="text-4xl md:text-5xl font-black tracking-tight">Cara Pesan</h2>
-            <p class="text-neutral-500 text-lg mt-4">Cukup 4 langkah, pesanan Anda selesai.</p>
-          </div>
-          <div class="grid md:grid-cols-4 gap-8 md:gap-12">
-            <div>
-              <p class="text-5xl md:text-6xl font-black text-neutral-200 leading-none mb-6">01</p>
-              <h3 class="text-lg font-bold">Konsultasi</h3>
-              <p class="text-neutral-500 mt-2 text-sm leading-relaxed">Hubungi kami via WhatsApp atau datang langsung. Ceritakan kebutuhan cetak Anda.</p>
-            </div>
-            <div>
-              <p class="text-5xl md:text-6xl font-black text-neutral-200 leading-none mb-6">02</p>
-              <h3 class="text-lg font-bold">Konfirmasi</h3>
-              <p class="text-neutral-500 mt-2 text-sm leading-relaxed">Kirim file atau kami bantu desain. Kami akan konfirmasi harga dan estimasi waktu.</p>
-            </div>
-            <div>
-              <p class="text-5xl md:text-6xl font-black text-neutral-200 leading-none mb-6">03</p>
-              <h3 class="text-lg font-bold">Cetak</h3>
-              <p class="text-neutral-500 mt-2 text-sm leading-relaxed">Tim kami mulai proses cetak dengan kontrol kualitas ketat.</p>
-            </div>
-            <div>
-              <p class="text-5xl md:text-6xl font-black text-neutral-200 leading-none mb-6">04</p>
-              <h3 class="text-lg font-bold">Ambil / Antar</h3>
-              <p class="text-neutral-500 mt-2 text-sm leading-relaxed">Pesanan siap diambil atau kami antar ke lokasi Anda (gratis area Denpasar).</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- TESTIMONIAL -->
-      <section class="py-24 md:py-32">
-        <div class="max-w-7xl mx-auto px-6">
-          <div class="max-w-xl mb-16">
-            <p class="text-xs font-bold text-neutral-400 tracking-[0.2em] uppercase mb-4">/ 05</p>
-            <h2 class="text-4xl md:text-5xl font-black tracking-tight">Apa Kata Mereka</h2>
-          </div>
-          <div class="grid md:grid-cols-3 gap-px bg-neutral-200">
-            <div class="bg-white p-8 md:p-10">
-              <div class="flex gap-1 mb-6">
-                <i class="ri-star-fill text-neutral-900"></i>
-                <i class="ri-star-fill text-neutral-900"></i>
-                <i class="ri-star-fill text-neutral-900"></i>
-                <i class="ri-star-fill text-neutral-900"></i>
-                <i class="ri-star-fill text-neutral-900"></i>
-              </div>
-              <p class="text-neutral-700 leading-relaxed">&ldquo;Hasil cetak buku tahunan sekolah bagus banget! Warnanya sharp, selesai cepat.&rdquo;</p>
-              <div class="mt-8 pt-6 border-t border-neutral-100">
-                <p class="font-bold text-sm">— Made</p>
-                <p class="text-xs text-neutral-400 mt-0.5">Kepala Sekolah</p>
-              </div>
-            </div>
-            <div class="bg-white p-8 md:p-10">
-              <div class="flex gap-1 mb-6">
-                <i class="ri-star-fill text-neutral-900"></i>
-                <i class="ri-star-fill text-neutral-900"></i>
-                <i class="ri-star-fill text-neutral-900"></i>
-                <i class="ri-star-fill text-neutral-900"></i>
-                <i class="ri-star-fill text-neutral-900"></i>
-              </div>
-              <p class="text-neutral-700 leading-relaxed">&ldquo;Spanduk dan banner event kantor jadi tepat waktu. Harga murah, kualitas oke.&rdquo;</p>
-              <div class="mt-8 pt-6 border-t border-neutral-100">
-                <p class="font-bold text-sm">— Komang</p>
-                <p class="text-xs text-neutral-400 mt-0.5">Event Organizer</p>
-              </div>
-            </div>
-            <div class="bg-white p-8 md:p-10">
-              <div class="flex gap-1 mb-6">
-                <i class="ri-star-fill text-neutral-900"></i>
-                <i class="ri-star-fill text-neutral-900"></i>
-                <i class="ri-star-fill text-neutral-900"></i>
-                <i class="ri-star-fill text-neutral-900"></i>
-                <i class="ri-star-fill text-neutral-900"></i>
-              </div>
-              <p class="text-neutral-700 leading-relaxed">&ldquo;Kartu nama dan brosur jadi lebih bagus dari yang saya bayangkan. Thank you LA Printing!&rdquo;</p>
-              <div class="mt-8 pt-6 border-t border-neutral-100">
-                <p class="font-bold text-sm">— Dewi</p>
-                <p class="text-xs text-neutral-400 mt-0.5">Owner Bisnis</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- KONTAK -->
-      <section id="kontak" class="bg-neutral-900 text-white py-24 md:py-32">
-        <div class="max-w-7xl mx-auto px-6">
-          <div class="max-w-xl mb-16">
-            <p class="text-xs font-bold text-neutral-500 tracking-[0.2em] uppercase mb-4">/ 06</p>
-            <h2 class="text-4xl md:text-5xl font-black tracking-tight text-white">Hubungi Kami</h2>
-          </div>
-          <div class="grid md:grid-cols-2 gap-12 md:gap-20">
-            <div class="space-y-8">
-              <div>
-                <p class="text-xs font-bold text-neutral-500 tracking-widest uppercase mb-2">Alamat</p>
-                <p class="text-lg md:text-xl font-medium leading-relaxed">Jl. Gatot Subroto VI No.37<br />Dangin Puri Kaja, Denpasar Utara<br />Bali 80233</p>
-              </div>
-              <div>
-                <p class="text-xs font-bold text-neutral-500 tracking-widest uppercase mb-2">Telepon / WA</p>
-                <a href="https://wa.me/6282144140250" target="_blank" rel="noopener" class="text-lg md:text-xl font-medium hover:text-neutral-300 transition-colors block">0821-4414-0250</a>
-              </div>
-              <div>
-                <p class="text-xs font-bold text-neutral-500 tracking-widest uppercase mb-2">Instagram</p>
-                <a href="https://www.instagram.com/la.printing_bali/" target="_blank" rel="noopener" class="text-lg md:text-xl font-medium hover:text-neutral-300 transition-colors block">@la.printing_bali</a>
-              </div>
-              <div>
-                <p class="text-xs font-bold text-neutral-500 tracking-widest uppercase mb-2">Jam Buka</p>
-                <p class="text-lg md:text-xl font-medium">Setiap hari</p>
-              </div>
-              <div class="flex flex-wrap gap-4 pt-4">
-                <a href="https://wa.me/6282144140250?text=Halo%20La%20Printing%20Bali%2C%20saya%20mau%20kosultasi%20untuk%20percetakan%20bisa%3F" target="_blank" rel="noopener" class="bg-white text-neutral-900 font-bold px-8 py-4 text-sm hover:bg-neutral-200 transition-colors inline-flex items-center gap-2">
-                  <i class="ri-whatsapp-fill text-base"></i>
-                  Chat WhatsApp
-                </a>
-                <a href="https://www.instagram.com/la.printing_bali/" target="_blank" rel="noopener" class="border border-neutral-600 text-neutral-300 font-medium px-8 py-4 text-sm hover:border-neutral-400 hover:text-white transition-colors inline-flex items-center gap-2">
-                  <i class="ri-instagram-line text-base"></i>
-                  Instagram
-                </a>
-              </div>
-            </div>
-            <div class="overflow-hidden">
-              <iframe
-                title="LA Printing Bali"
-                src="https://maps.google.com/maps?q=Jl.+Gatot+Subroto+VI+No.37,+Dangin+Puri+Kaja,+Kec.+Denpasar+Utara,+Kota+Denpasar,+Bali+80233&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                width="100%"
-                height="100%"
-                style="border:0;min-height:320px;display:block;"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      <Hero />
+      <Layanan24Jam />
+      <Jasa />
+      <Produk />
+      <Tentang />
+      <CaraPesan />
+      <Testimonial />
+      <Kontak />
     </main>
 
-    <!-- FOOTER -->
-    <footer class="bg-black text-neutral-500 py-10 mb-24 md:mb-0">
-      <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
-        <p class="text-sm">&copy; 2026 LA Printing Bali</p>
-        <p class="text-xs">Develope with &#10084;&#65039; by <a href="https://webkalcer.com" target="_blank" rel="noopener" class="text-white hover:text-neutral-300 transition-colors">Webkalcer.com</a> <span class="text-neutral-600">|</span> <span class="text-neutral-500">Jasa Bikin Landing Page, Website Modern Dan Kalcer Di Indonesia</span></p>
-      </div>
-    </footer>
-
-    <!-- FLOATING BOTTOM BAR (Mobile) -->
-    <div class="md:hidden fixed bottom-0 inset-x-0 z-50 flex gap-3 px-3 pt-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] bg-gradient-to-t from-white via-white/95 to-white shadow-[0_-4px_30px_rgba(0,0,0,0.08)]">
-      <a href="#kontak" class="flex-1 bg-white text-neutral-900 flex items-center justify-center gap-2 py-[18px] text-sm font-bold rounded border border-neutral-200 active:scale-[0.97] transition-all">
-        <i class="ri-map-pin-2-line text-lg"></i>
-        Cek Lokasi
-      </a>
-      <a href="https://wa.me/6282144140250?text=Halo%20La%20Printing%20Bali%2C%20saya%20mau%20kosultasi%20untuk%20percetakan%20bisa%3F" target="_blank" rel="noopener" class="flex-1 bg-neutral-900 text-white flex items-center justify-center gap-2 py-[18px] text-sm font-bold rounded active:scale-[0.97] transition-all shadow-lg">
-        <i class="ri-whatsapp-fill text-lg"></i>
-        Chat WA
-      </a>
-    </div>
-
-    <script is:inline>
-      (function() {
-        var menuBtn = document.getElementById('menu-btn');
-        var menuClose = document.getElementById('menu-close');
-        var mobileMenu = document.getElementById('mobile-menu');
-        var menuIcon = document.getElementById('menu-icon');
-
-        function openMenu() {
-          mobileMenu.classList.remove('translate-x-full');
-          document.body.style.overflow = 'hidden';
-        }
-        function closeMenu() {
-          mobileMenu.classList.add('translate-x-full');
-          document.body.style.overflow = '';
-        }
-        if (menuBtn) menuBtn.addEventListener('click', openMenu);
-        if (menuClose) menuClose.addEventListener('click', closeMenu);
-        if (mobileMenu) {
-          mobileMenu.querySelectorAll('a').forEach(function(link) {
-            link.addEventListener('click', closeMenu);
-          });
-        }
-      })();
-    </script>
+    <Footer />
+    <FloatingBar />
+    <MobileMenuScript />
   </body>
 </html>
